@@ -1,0 +1,47 @@
+{
+  "name": "gatsby-plugin-accessibilityjs",
+  "version": "1.0.0",
+  "description": "Adds accessibility.js snippet to all renderered pages",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "watch": "babel -w src --out-dir . --ignore __tests__",
+    "prepublish": "cross-env NODE_ENV=production npm run build"
+  },
+  "keywords": [
+    "gatsby",
+    "accessibility",
+    "a11y"
+  ],
+  "author": "Aaron Lampros <alampros@gmail.com> (https://github.com/alampros)",
+  "license": "MIT",
+  "dependencies": {
+    "accessibilityjs": "^1.1.0",
+    "babel-runtime": "^6.26.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^5.0.5"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alampros/gatsby-plugin-accessibilityjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alampros/gatsby-plugin-accessibilityjs/issues"
+  },
+  "homepage": "https://github.com/alampros/gatsby-plugin-accessibilityjs#readme"
+}
