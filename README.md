@@ -2,6 +2,8 @@
 
 Adds Github's [accessibility.js](https://github.com/github/accessibilityjs) snippet to all rendered pages.
 
+![screenshot](.github/gatsby-plugin-accessibilityjs-screenshot.png)
+
 ## Install
 
 `yarn add gatsby-plugin-accessibilityjs`
