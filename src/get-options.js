@@ -8,6 +8,14 @@ module.exports = (opts) => defaults(opts, {
   `,
   errorClassName: `accessibility-error`,
   onError: (error) => {
-    console.warn(`%cA11y Error:%c`, `border-radius: 3px; padding: 1px 3px; background: #2d81a2; color: white`, ``, error.name, error.element)
+    const style = {
+      name: 'color: #895F24; font-weight: 900;',
+      label: 'padding: 1px 3px; text-transform: uppercase; border-radius: 3px; background: #FEE0AF; color: #5C3611;',
+      reset: '',
+    }
+    const { name, element, message } = error
+    console.groupCollapsed('%cA11y Error:%c %c%s%c', style.label, style.reset, style.name, name, style.reset, element)
+    console.warn(message)
+    console.groupEnd()
   },
 })
