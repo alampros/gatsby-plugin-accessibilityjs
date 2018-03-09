@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-accessibilityjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds accessibility.js snippet to all renderered pages",
   "main": "index.js",
   "scripts": {
